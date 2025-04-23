@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Form</title>
+  <link rel="stylesheet" href="styles5.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>online form</h1>
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <small class="error-message" id="nameError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <small class="error-message" id="emailError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        <small class="error-message" id="phoneError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
+        <small class="character-counter" id="charCount">(0 / 500)</small>
+        <small class="error-message" id="messageError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="file">Upload File:</label>
+        <input type="file" id="file" name="file">
+      </div>
+
+      <button type="submit" id="submitBtn">Submit</button>
+    </form>
+    <p id="successMessage" class="hidden">Thank you! Your form has been submitted successfully.</p>
+  </div>
+
+  <script src="script5.js"></script>
+</body>
+</html>
